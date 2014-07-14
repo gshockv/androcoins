@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroCoins</string>
+    
+    <string name="ok_">OK</string>
+    <string name="cancel_">CANCEL</string>
+    
+    <string name="edit_item">Edit</string>
+    <string name="delete_item">Remove</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+	
+	<string name="today_spent">Today spent</string>
+	    
+    <!-- Activities titles -->
+    <string name="dashboard_activity_title">AndroCoins</string>
+    <string name="edit_expenses_activity_title">Edit expenses</string>
+    <string name="categories_activity_title">Expense categories</string>
+    <string name="select_category_view_title">Select category</string>
+    <string name="add_expense_activity_title">New expense</string>
+    <string name="edit_expense_activity_title">Edit expense</string>
+    <string name="prefs_activity_title">Settings</string>
+
+    <!-- app menu items -->
+    <string name="app_menu_today">Today</string>
+    <string name="app_menu_edit">Edit expenses</string>
+    <string name="app_menu_reports">Reports</string>
+    <string name="app_menu_categories">Categories</string>
+    <string name="app_menu_settings">Settings</string>
+
+    <!-- today view actionBar actions -->
+    <string name="action_add">Add exoense</string>
+    <string name="action_today">Today</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Edit expense view strings -->
+    <string name="category_subtitle">Category \"%s\"</string>
+    <string name="edit_expense_category_menu">Expense category</string>
+    <string name="edit_expense_summary_menu">Summary</string>
+    <string name="edit_expense_summary_hint">Expense summary</string>
+    <!-- scrolled pages title -->
+    <string name="edit_today">today</string>
+    <string name="edit_yesterday">yesterday</string>
+    <string name="edit_week">this week</string>
+    <string name="edit_month">this month</string>
+
+    <!-- Preferences strings -->
+    <string name="prefs_main">General settings</string>
+    <string name="prefs_additional">Additional</string>
+    <string name="prefs_currency_title">Currency</string>
+    <string name="prefs_currency_summary">Default expense currency</string>
+    <string name="prefs_about_title">About</string>
+    <string name="prefs_about_summary">About this application</string>
+        
+    <!-- Reports -->
+    <string name="today_report">Today</string>
+    <string name="week_report">Week</string>
+    <string name="month_report">Month</string>
+    <string name="period_report">By range</string>
+    <string name="date_report">By date</string>
+
+    <string name="today_report_title">Today expenses</string>
+    <string name="week_report_title">Week expenses</string>
+    <string name="month_report_title">Month expenses</string>
+    <string name="period_report_title">Expenses by %1$s - %2$s</string>
+    <string name="date_report_title">Expenses by %1$s</string>
+    
+    <!-- Predefined categories -->
+    <string name="cat_general">General</string>
+    <string name="cat_transport">Transport</string>
+    <string name="cat_wear">Closing</string>
+    <string name="cat_food">Food</string>
+    <string name="cat_shopping">Shopping</string>
+    <string name="cat_internet">Internet</string>
+    <string name="cat_cell_phone">Cellular phone</string>
+    <string name="cat_household">Household</string>
+    <string name="cat_fav">Honey</string>
+    <string name="cat_travel">Traveling</string>
+    <string name="cat_hobby">Hobby</string>
+    <string name="cat_private">Private</string>
+    <string name="cat_car">Vehicle</string>
+    <string name="cat_entertainment">Entertainment</string>
+    <string name="cat_pets">Pets</string>
+    <string name="cat_gifts">Gifts</string>
+    <string name="cat_child">Child</string>
+
+    <!-- section headers -->
+    <string name="category_system_title">SYSTEM CATEGORIES</string>
+    <string name="category_custom_title">CUSTOM CATEGORIES</string>
+    <string name="today_section_header">TODAY EXPENSES</string>
+
+    <string name="category_enabled_state">(active)</string>
+    <string name="category_disabled_state">(disabled)</string>
+    <string name="category_do_activate">Activate</string>
+    <string name="category_do_disactivate">Deactivate</string>
+    <string name="category_enabled_message">Category \'%1$s\' activated</string>
+    <string name="category_disabled_message">Category \'%1$s\' disabled</string>
+    <string name="category_delete_title">Remove category</string>
+    <string name="category_delete_confirm">When category will be deleted all associated expenses will be deleted also. Continue?</string>
+    <string name="category_update_error">Category edit error \'%1$s\'</string>
+    <string name="category_delete_error">Category remove error \'%1$s\'</string>
+    
+    <!-- Edit category dialog -->
+    <string name="category_dialog_new_title">New category</string>
+    <string name="category_dialog_edit_title">Edit category</string>
+    <string name="category_dialog_field_prompt">Category title</string>
+
+    <!-- Context menu for categories list -->
+    <string name="category_ctxmenu_title">Category actions</string>
+    <string name="category_expences_empty">There are no registered expenses</string>
+    <string name="category_info_item">Details</string>
+    <string name="change_report_type">Change report type</string>
+    <string name="total">TOTAL:</string>
+    <string name="expenses_empty">There are no registered expenses</string>
+    <string name="default_currency">UAH</string>
+    <string name="unknown_report_type">Unsupported report type</string>
+    
+    <!-- Edit today expenses strings -->
+    <string name="remove_today_item_title">Remove expense</string>
+    <string name="remove_today_item_confirm">Remove selected expense?</string>
+    <string name="edit_today_ctx_menu_title">Expense actions</string>
+    
+    <!-- Category details dialog strings -->
+    <string name="category_details_dlt_title">Category details</string>
+    <string name="category_details_expenses">Registered expenses:</string>
+    <string name="category_details_today">- today</string>
+    <string name="category_details_week">- week</string>
+    <string name="category_details_month">- month</string>
+    <string name="category_details_total">Total:</string>
+    
+    <!-- App About dialog strings -->
+    <string name="about_title">About...</string>
+    <string name="about_version">Version:</string>
+    <string name="about_developer_text">Developer:</string>
+    <string name="about_developer_url">gshockv.github.com</string>
+    <string name="about_summary">Simple expense manager application</string>
+
+    <string name="category_with_summary">%1$s %2$s</string>
+
+    <string name="open_source_licenses">Open-Source components</string>
+
+    <string name="dialog_select_date_title">Select date</string>
+    <string name="dialog_select_start_date_title">Start date</string>
+    <string name="dialog_select_end_date_title">End date</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HoloLight" parent="Theme.Sherlock.Light">
+        <item name="android:windowBackground">@color/AppSolidBackground</item>
+
+        <item name="actionBarStyle">@style/HoloLight.ActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/HoloLight.ActionBarStyle</item>
+
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="android:homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+
+        <item name="android:editTextStyle">@style/HoloLight.EditTextHoloLight</item>
+    </style>
+</resources>

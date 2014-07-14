@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.androcoins"
+          android:versionCode="4"
+          android:versionName="1.2">
+
+    <application
+            android:icon="@drawable/app_icon"
+            android:label="@string/app_name"
+            android:theme="@style/HoloLight">
+
+        <activity android:name=".ui.activity.TodayActivity"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.ExpensesEditActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/edit_expenses_activity_title"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".ui.activity.EditorActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.CategoriesActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/categories_activity_title"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".ui.activity.ReportActivity"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name=".ui.activity.AppPreferencesActivity"
+                  android:label="@string/prefs_activity_title" android:screenOrientation="portrait"/>
+
+    </application>
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+
+</manifest>

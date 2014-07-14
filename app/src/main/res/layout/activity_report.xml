@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingTop="5dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp">
+
+    <!-- report cards container -->
+    <LinearLayout
+            android:id="@+id/view_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:isScrollContainer="true">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/DarkGrey"
+                    android:text="@string/total"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/txt_report_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:textSize="32sp"
+                    android:textColor="@color/DarkGrey"
+                    android:gravity="center_vertical|right"
+                    android:text="1234"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/HoloLightBlue"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+            <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- empty text -->
+    <org.androcoins.ui.widget.TextViewHolo
+            android:id="@+id/txt_empty"
+            style="@style/ReportEmpty"
+            android:text="@string/expenses_empty"
+            android:visibility="gone"/>
+
+</FrameLayout>

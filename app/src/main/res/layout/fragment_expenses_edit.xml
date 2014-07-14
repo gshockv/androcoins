@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+        <!-- Empty message -->
+        <org.androcoins.ui.widget.TextViewHolo
+                android:id="@+id/txt_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5pt"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#6b6a6a"
+                android:textSize="7pt"
+                android:singleLine="false"
+                android:visibility="gone"
+                android:text="@string/expenses_empty"/>
+
+        <!-- Today registered expenses list -->
+        <ListView android:id="@+id/list_expences"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:divider="#b8b6b6"
+                  android:dividerHeight="1px"
+                  android:drawSelectorOnTop="true"
+                  android:fadeScrollbars="true"
+                  android:fadingEdge="none"/>
+    </FrameLayout>
+
+</LinearLayout>

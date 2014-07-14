@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+
+    <!-- Today spent widgets -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.androcoins.ui.widget.TextViewHolo
+            android:id="@+id/txt_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today_spent"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/TextColorRegular" />
+ 
+        <!-- Spent value widget -->
+        <org.androcoins.ui.widget.TextViewHolo
+                android:id="@+id/today_expenses_text"
+                android:layout_below="@id/txt_label"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|left"
+                android:textSize="44sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/TextColorRegular"
+                android:text="255.55"
+                android:background="@drawable/calc_led_style"/>
+    </RelativeLayout>
+
+    <!-- today expenses list -->
+    <include
+            layout="@layout/today_section_view"
+            android:id="@+id/view_section_header"/>
+
+    <org.androcoins.ui.widget.ButtonHolo
+            android:id="@+id/btn_new"
+            android:layout_height="54dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_expense_activity_title"
+            style="@style/HoloWhiteFlatButton"
+            android:onClick="onNewExpenseClick"
+            android:visibility="gone" />
+    <ListView
+            android:id="@+id/list_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+</LinearLayout>

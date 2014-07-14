@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="AppMenuBehindOffset">100dp</dimen>
+    <dimen name="AppMenuShadowWidth">10dp</dimen>
+
+    <dimen name="ReportTotalStickyHeight">80dp</dimen>
+    <dimen name="ReportTotalMsrginTop">15dp</dimen>
+    <dimen name="ReportTotalMsrginBottom">5dp</dimen>
+</resources>

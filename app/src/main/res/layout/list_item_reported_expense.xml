@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="56dp"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/list_item_style">
+
+    <ImageView android:id="@+id/img_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp"
+               android:layout_gravity="center_vertical"
+               android:src="@drawable/ico_gift"
+               android:focusable="false"/>
+
+    <LinearLayout
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/img_icon"
+            android:gravity="center_vertical"
+            android:focusable="false">
+
+        <org.androcoins.ui.widget.TextViewHolo android:id="@+id/txt_title"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:ellipsize="marquee"
+                                               android:singleLine="true"
+                                               android:textSize="18sp"
+                                               android:text="Title"/>
+
+        <org.androcoins.ui.widget.TextViewHolo android:id="@+id/txt_subtitle"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="wrap_content"
+                                               android:textSize="5pt"
+                                               android:textStyle="normal"
+                                               android:textColor="#2e2d2d"
+                                               android:ellipsize="marquee"
+                                               android:singleLine="true"
+                                               android:text="(subtitle)"/>
+    </LinearLayout>
+
+</LinearLayout>

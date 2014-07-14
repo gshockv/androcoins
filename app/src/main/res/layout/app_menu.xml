@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AppMenuBackground">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- menu header -->
+        <TextView
+                android:id="@+id/txt_title"
+                style="@style/AppMenuHeader"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/app_name"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/AppMenuSeparator"/>
+
+        <!-- menu items -->
+        <TextView
+                style="@style/AppMenuItem"
+                android:text="@string/app_menu_today"
+                android:drawableLeft="@drawable/ico_menu_today"
+                android:onClick="onTodayClick"/>
+        <include layout="@layout/app_menu_separator"/>
+        <TextView
+                style="@style/AppMenuItem"
+                android:drawableLeft="@drawable/ico_menu_edit"
+                android:text="@string/app_menu_edit"
+                android:onClick="onEditClick"/>
+        <include layout="@layout/app_menu_separator"/>
+        <TextView
+                style="@style/AppMenuItem"
+                android:drawableLeft="@drawable/ico_menu_reports"
+                android:text="@string/app_menu_reports"
+                android:onClick="onReportsClick"/>
+        <include layout="@layout/app_menu_separator"/>
+        <TextView
+                style="@style/AppMenuItem"
+                android:drawableLeft="@drawable/ico_menu_categories"
+                android:text="@string/app_menu_categories"
+                android:onClick="onCategoriesClick"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/AppMenuSeparator"/>
+
+        <TextView
+                style="@style/AppMenuItem"
+                android:drawableLeft="@drawable/ico_menu_settings"
+                android:text="@string/app_menu_settings"
+                android:onClick="onSettingsClick"/>
+    </LinearLayout>
+</ScrollView>

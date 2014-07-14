@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/AppWhite">
+
+    <!-- dialog title -->
+    <RelativeLayout
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp">
+        <ImageView
+                android:id="@+id/icon_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ico_airplane"/>
+
+        <org.androcoins.ui.widget.TextViewHolo
+                android:id="@+id/txt_title"
+                android:layout_toRightOf="@id/icon_view"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                style="@style/AlertDialogTitle"
+                android:text="General"/>
+    </RelativeLayout>
+    <!-- title divider -->
+    <View
+            android:id="@+id/title_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/title_view"
+            android:background="@color/HoloLightBlue"/>
+
+    <org.androcoins.ui.widget.TextViewHolo
+            android:id="@+id/txt_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_divider"
+            android:paddingTop="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/CategoryEmptyExpencesText"
+            android:text="@string/category_expences_empty"
+            android:singleLine="false"
+            android:visibility="invisible"/>
+
+    <!-- dialog content -->
+    <LinearLayout
+            android:id="@+id/view_widgets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_below="@id/title_divider"
+            android:visibility="invisible">
+        <!-- Expenses views -->
+        <org.androcoins.ui.widget.TextViewHolo
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:text="@string/category_details_expenses"/>
+
+        <!-- today expenses -->
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="15dp">
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/category_details_today"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_today_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/AppDarkBlue"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="22.50"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_currency_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:text="грн."/>
+        </LinearLayout>
+
+        <!-- weekly expenses -->
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="15dp">
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/category_details_week"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_week_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/AppDarkBlue"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="50.35"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_currency_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:text="грн."/>
+        </LinearLayout>
+
+        <!-- monthly expenses -->
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="15dp">
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/category_details_month"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_month_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/AppDarkBlue"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="145.00"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_currency_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:text="грн."/>
+        </LinearLayout>
+
+        <!-- TOTAL expenses -->
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="1dp">
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:text="@string/category_details_total"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_total_text"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:gravity="right"
+                    android:textColor="@color/AppDarkBlue"
+                    android:textSize="22sp"
+                    android:text="223.45"/>
+            <org.androcoins.ui.widget.TextViewHolo
+                    android:id="@+id/category_details_currency_4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="грн."/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+            android:id="@+id/bottom_separator_view"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/view_widgets"
+            android:background="@color/DialogDivider"/>
+
+    <!-- dialog buttons -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_separator_view"
+            android:orientation="horizontal">
+        <org.androcoins.ui.widget.ButtonHolo
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/cancel_"
+                style="@style/HoloWhiteFlatButton"
+                android:visibility="gone"/>
+        <View
+                android:id="@+id/buttons_separator_view"
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="@color/DialogDivider"
+                android:visibility="gone"/>
+        <org.androcoins.ui.widget.ButtonHolo
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/ok_"
+                style="@style/HoloWhiteFlatButton"/>
+    </LinearLayout>
+</RelativeLayout>

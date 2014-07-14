@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TableRow android:layout_height="match_parent"
+		    android:layout_weight="0.25">
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="1"
+            android:tag="1"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+			android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+			style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="2"
+            android:tag="2"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="3"
+            android:tag="3"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="1dp"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+	</TableRow>
+
+	<TableRow android:layout_height="match_parent"
+		android:layout_weight="0.25">
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="4"
+            android:tag="4"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="5"
+            android:tag="5"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="6"
+            android:tag="6"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="1dp"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+	</TableRow>
+
+	<TableRow android:layout_height="match_parent"
+		android:layout_weight="0.25">
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="7"
+            android:tag="7"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="8"
+            android:tag="8"
+            android:onClick="onDigitClicked"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="9"
+            android:tag="9"
+            android:onClick="onDigitClicked"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="1dp"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+	</TableRow>
+
+	<TableRow android:layout_height="match_parent"
+		android:layout_weight="0.20">
+		<org.androcoins.ui.widget.ButtonHolo
+			android:text="0"
+            android:tag="0"
+            android:onClick="onDigitClicked"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<org.androcoins.ui.widget.ButtonHolo
+            android:id="@+id/btn_dot"
+			android:text="."
+            android:onClick="onDotClicked"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_weight="0.3"
+			android:layout_marginBottom="2dp"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+		<ImageButton
+			android:src="@drawable/ico_clear"
+            android:onClick="onClearClicked"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_marginRight="1dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginLeft="1dp"
+			android:layout_weight="0.25"
+            android:textColor="@color/LedDisplayText"
+            android:textSize="28sp"
+            style="@style/HoloButton" />
+	</TableRow>
+</TableLayout>

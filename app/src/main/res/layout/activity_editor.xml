@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- LED -->
+    <org.androcoins.ui.widget.TextViewHolo
+            android:id="@+id/txt_led"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:gravity="center_vertical|right"
+            android:textSize="46sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/LedDisplayText"
+            android:text="255.55"
+            android:background="@drawable/calc_led_style"/>
+
+    <!-- Calculator buttons -->
+    <include
+            android:id="@+id/calc_buttons_view"
+            layout="@layout/calc_buttons_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"/>
+
+    <!-- Buttons -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+        <org.androcoins.ui.widget.ButtonHolo
+                android:id="@+id/btn_cancel"
+                android:layout_height="52dp"
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+                android:text="@string/cancel_"
+                style="@style/HoloWhiteFlatButton"
+                android:layout_weight="0.5"
+                android:onClick="onCancelClicked"/>
+        <View
+                android:id="@+id/buttons_separator_view"
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:background="@android:color/transparent"/>
+        <org.androcoins.ui.widget.ButtonHolo
+                android:id="@+id/btn_ok"
+                android:layout_height="52dp"
+                android:layout_width="match_parent"
+                android:text="@string/ok_"
+                style="@style/HoloWhiteFlatButton"
+                android:layout_weight="0.5"
+                android:onClick="onOKClicked"/>
+    </LinearLayout>
+
+</LinearLayout>

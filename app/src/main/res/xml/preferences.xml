@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/prefs_main">
+		<EditTextPreference
+                android:key="currencyPreference"
+                android:title="@string/prefs_currency_title"
+                android:summary="@string/prefs_currency_summary"
+                android:defaultValue="@string/default_currency" />
+	</PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/prefs_additional">
+		<Preference
+                android:title="@string/prefs_about_title"
+                android:summary="@string/prefs_about_summary"
+                android:key="aboutPrefs" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

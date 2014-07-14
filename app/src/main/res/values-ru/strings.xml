@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroCoins</string>
+    
+    <string name="ok_">OK</string>
+    <string name="cancel_">ОТМЕНА</string>
+    
+    <string name="edit_item">Изменить</string>
+    <string name="delete_item">Удалить</string>
+    <string name="save_button">Сохранить</string>
+    <string name="cancel_button">Отмена</string>
+	
+	<string name="today_spent">Сегодня потрачено</string>
+	    
+    <!-- Activities titles -->
+    <string name="dashboard_activity_title">AndroCoins</string>
+    <string name="edit_expenses_activity_title">Редактирование расходов</string>
+    <string name="categories_activity_title">Категории расходов</string>
+    <string name="select_category_view_title">Выбор категории</string>
+    <string name="add_expense_activity_title">Новый расход</string>
+    <string name="edit_expense_activity_title">Редактирование расхода</string>
+    <string name="prefs_activity_title">Настройки приложения</string>
+
+    <!-- app menu items -->
+    <string name="app_menu_today">Сегодня</string>
+    <string name="app_menu_edit">Редактировать</string>
+    <string name="app_menu_reports">Отчеты о расходах</string>
+    <string name="app_menu_categories">Категории расходов</string>
+    <string name="app_menu_settings">Параметры</string>
+
+    <!-- today view actionBar actions -->
+    <string name="action_add">Добавить</string>
+    <string name="action_today">Текущий день</string>
+    <string name="action_settings">Настройки</string>
+
+    <!-- Edit expense view strings -->
+    <string name="category_subtitle">Категория \"%s\"</string>
+    <string name="edit_expense_category_menu">Категория расхода</string>
+    <string name="edit_expense_summary_menu">Примечание</string>
+    <string name="edit_expense_summary_hint">Дополнительное описание расхода</string>
+    <!-- scrolled pages title -->
+    <string name="edit_today">сегодня</string>
+    <string name="edit_yesterday">вчера</string>
+    <string name="edit_week">на этой неделе</string>
+    <string name="edit_month">в этом месяце</string>
+
+    <!-- Preferences strings -->
+    <string name="prefs_main">Основные настройки</string>
+    <string name="prefs_additional">Дополнительно</string>
+    <string name="prefs_currency_title">Валюта</string>
+    <string name="prefs_currency_summary">Указание наименования текущей валюты расчетов</string>
+    <string name="prefs_about_title">О программе</string>
+    <string name="prefs_about_summary">Краткая информация о приложении</string>
+        
+    <!-- Reports -->
+    <string name="today_report">За сегодня</string>
+    <string name="week_report">За неделю</string>
+    <string name="month_report">За месяц</string>
+    <string name="date_report">За дату</string>
+    <string name="period_report">За период времени</string>
+
+    <string name="today_report_title">Расходы за сегодня</string>
+    <string name="week_report_title">Расходы за неделю</string>
+    <string name="month_report_title">Расходы за месяц</string>
+    <string name="period_report_title">Расходы за %1$s - %2$s</string>
+    <string name="date_report_title">Расходы за %1$s</string>
+
+    <!-- Predefined categories -->
+    <string name="cat_general">Общая</string>
+    <string name="cat_transport">Транспорт</string>
+    <string name="cat_wear">Одежда</string>
+    <string name="cat_food">Питание</string>
+    <string name="cat_shopping">Покупки</string>
+    <string name="cat_internet">Интернет</string>
+    <string name="cat_cell_phone">Мобильная связь</string>
+    <string name="cat_household">Бытовые</string>
+    <string name="cat_fav">Любимая</string>
+    <string name="cat_travel">Путешествия</string>
+    <string name="cat_hobby">Хобби</string>
+    <string name="cat_private">Личное</string>
+    <string name="cat_car">Машина</string>
+    <string name="cat_entertainment">Развлечения</string>
+    <string name="cat_pets">Питомцы</string>
+    <string name="cat_gifts">Подарки</string>
+    <string name="cat_child">Ребенок</string>
+
+    <!-- section headers -->
+    <string name="category_system_title">СИСТЕМНЫЕ</string>
+    <string name="category_custom_title">ПОЛЬЗОВАТЕЛЬСКИЕ</string>
+    <string name="today_section_header">РАСХОДЫ ЗА СЕГОДНЯ</string>
+
+    <string name="category_enabled_state">(активна)</string>
+    <string name="category_disabled_state">(отключена)</string>
+    <string name="category_do_activate">Активировать</string>
+    <string name="category_do_disactivate">Отключить</string>
+    <string name="category_enabled_message">Категория \'%1$s\' включена</string>
+    <string name="category_disabled_message">Категория \'%1$s\' отключена</string>
+    <string name="category_delete_title">Удаление категории</string>
+    <string name="category_delete_confirm">При удалении категории удалятся все связанные расходы. Продолжить?</string>
+    <string name="category_update_error">Ошибка при изменении категории \'%1$s\'</string>
+    <string name="category_delete_error">Ошибка при удалении категории \'%1$s\'</string>
+    
+    <!-- Edit category dialog -->
+    <string name="category_dialog_new_title">Добавить категорию</string>
+    <string name="category_dialog_edit_title">Изменить категорию</string>
+    <string name="category_dialog_field_prompt">Название категории</string>
+
+    <!-- Context menu for categories list -->
+    <string name="category_ctxmenu_title">Действия с категорией</string>
+    <string name="category_expences_empty">Нет зарегистрированных расходов</string>
+    <string name="category_info_item">Детальнее</string>
+
+    <string name="change_report_type">Изменить тип отчета</string>
+    <string name="go_home">Главный экран</string>
+    <string name="active_label">Активна</string>
+    <string name="total">ИТОГО:</string>
+    <string name="expenses_empty">Зарегистрированные расходы отсутствуют</string>
+    <string name="default_currency">грн</string>
+    <string name="unknown_report_type">Тип отчета не поддерживается</string>
+    
+    <!-- Edit today expenses strings -->
+    <string name="remove_today_item_title">Удаление расхода</string>
+    <string name="remove_today_item_confirm">Продолжить удаление выбранной записи о расходе?</string>
+    <string name="edit_today_ctx_menu_title">Действие с расходом</string>
+    
+    <!-- Category details dialog strings -->
+    <string name="category_details_dlt_title">О категории...</string>
+    <string name="category_details_expenses">Расходы за:</string>
+    <string name="category_details_today">- сегодня</string>
+    <string name="category_details_week">- неделю</string>
+    <string name="category_details_month">- месяц</string>
+    <string name="category_details_total">Всего:</string>
+    
+    <!-- App About dialog strings -->
+    <string name="about_title">О программе...</string>
+    <string name="about_version">Версия:</string>
+    <string name="about_developer_text">Разработчик:</string>
+    <string name="about_developer_url">gshockv.github.com</string>
+    <string name="about_summary">Учет потраченных карманных средств</string>
+
+    <string name="open_source_licenses">Open-Source компоненты</string>
+
+    <string name="dialog_select_date_title">Выберите дату</string>
+    <string name="dialog_select_start_date_title">Начальная дата</string>
+    <string name="dialog_select_end_date_title">Конечная дата</string>
+</resources>

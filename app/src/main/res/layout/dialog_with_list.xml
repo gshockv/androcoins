@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AppWhite">
+
+    <!-- dialog title -->
+    <RelativeLayout
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+        <ImageView
+                android:id="@+id/icon_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dip"
+                android:src="@null"
+                android:visibility="gone"/>
+
+        <org.androcoins.ui.widget.TextViewHolo
+                android:id="@+id/txt_title"
+                android:layout_toRightOf="@id/icon_view"
+                style="@style/AlertDialogTitle"
+                android:text="@string/category_ctxmenu_title"/>
+    </RelativeLayout>
+    <!-- title divider -->
+    <View
+            android:id="@+id/title_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/title_view"
+            android:background="@color/HoloLightBlue" />
+
+    <!-- Menu -->
+    <ListView
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_divider"
+            android:divider="@color/ListDivider"
+            android:dividerHeight="1dp" />
+
+</RelativeLayout>

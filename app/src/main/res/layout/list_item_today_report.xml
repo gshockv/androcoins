@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="28pt"
+    android:padding="2pt"
+    android:clickable="false"
+    android:focusable="false"
+    android:background="@android:color/white">
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1">
+	    
+	    <!-- Category icon -->
+		<ImageView android:id="@+id/report_item_category_icon" 
+	        	android:layout_width="wrap_content" 
+	            android:layout_height="fill_parent"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginRight="3pt"
+	            android:src="@drawable/ico_camera" />
+
+	    <!-- Expense summary text -->
+	    <org.androcoins.ui.widget.TextViewHolo android:id="@+id/report_item_summary_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/report_item_category_icon"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:textSize="5pt"
+	            android:textStyle="normal"
+	            android:textColor="#2e2d2d"
+	            android:ellipsize="marquee"
+	            android:singleLine="true"
+	            android:text="expense summary" />
+	             
+	    <!-- Category title -->
+	    <org.androcoins.ui.widget.TextViewHolo android:id="@+id/report_item_category_title"
+	        	android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/report_item_category_icon"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_above="@id/report_item_summary_text"
+	            android:layout_alignWithParentIfMissing="true"
+	            android:gravity="center_vertical"
+	            android:textSize="7pt"
+	            android:textStyle="bold"
+	            android:textColor="#2e2d2d"
+	            android:ellipsize="marquee"
+	            android:singleLine="true"
+	            android:text="Expense category"/>
+
+	</RelativeLayout>
+
+    <!-- Total amount with currency -->
+    <org.androcoins.ui.widget.TextViewHolo android:id="@+id/report_item_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:textColor="#0a4b88"
+            android:text="15" />
+    <org.androcoins.ui.widget.TextViewHolo android:id="@+id/report_item_amount_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1pt"
+            android:layout_marginRight="2pt"
+            android:textSize="5pt"
+            android:textStyle="normal"
+            android:textColor="#0a4b88"
+            android:text="грн" />
+</LinearLayout>

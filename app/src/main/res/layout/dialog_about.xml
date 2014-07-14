@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background="@android:color/white">
+    
+    <!-- Icon and title -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="2pt"
+            android:src="@drawable/app_icon" />
+        
+        <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="2pt">
+	        
+	        <org.androcoins.ui.widget.TextViewHolo
+                    android:layout_width="fill_parent"
+	            android:layout_height="0dip"
+	            android:layout_weight="1"
+	            android:ellipsize="marquee"
+	            android:gravity="center_vertical"
+	            android:textColor="#336699"
+	            android:textStyle="bold"
+	            android:textSize="8pt"
+	            android:text="@string/app_name"/>
+	        <LinearLayout android:orientation="horizontal"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="2pt">
+	            <org.androcoins.ui.widget.TextViewHolo
+                        android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="@android:color/black"
+	                android:textSize="5pt"
+	                android:text="@string/about_version" />
+	            <org.androcoins.ui.widget.TextViewHolo
+                        android:id="@+id/about_version_text"
+	                android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="5pt"
+                    android:layout_marginLeft="3pt"
+                    android:text="1.1.0" />
+	        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- Separator -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="2pt"
+        android:layout_marginBottom="3pt"
+        android:background="#676869" />
+    
+    <org.androcoins.ui.widget.TextViewHolo
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="2pt"
+        android:singleLine="false"
+        android:text="@string/about_summary"/>
+        
+    <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_marginLeft="2pt">
+        <org.androcoins.ui.widget.TextViewHolo
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/about_developer_text"/>
+        
+        <org.androcoins.ui.widget.TextViewHolo
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2pt"
+            android:layout_marginBottom="8pt"
+            android:textColorLink="#1695f6"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="@string/about_developer_url"/>
+    </LinearLayout>
+</LinearLayout>
